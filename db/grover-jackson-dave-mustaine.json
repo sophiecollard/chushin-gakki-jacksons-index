@@ -1,21 +1,6 @@
 {
     "brand": "Grover Jackson",
     "model": "Dave Mustaine Professional",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "1993-1994"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Quarter Sawn Maple",
@@ -48,7 +33,7 @@
             "controls": "2x Volume, 1x Tone, 3-Way Toggle Switch",
             "pickup_configuration": {
                 "neck": "Bill Lawrence L-500",
-                "bridge": "J-80"
+                "bridge": "Jackson J-80"
             }
         },
         "hardware": {
@@ -64,7 +49,6 @@
         "source": "1993 Jackson & Charvel Catalog (Japan)",
         "value": "JPY 230,000"
     },
-    "notes": null,
     "pictures": null,
     "links": {
         "catalogues": [
@@ -74,5 +58,12 @@
             }
         ],
         "reverb_listings": []
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 1993,
+            "until": 1994
+        }
     }
 }

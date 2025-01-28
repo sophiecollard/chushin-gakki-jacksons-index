@@ -1,21 +1,6 @@
 {
     "brand": "Grover Jackson",
-    "model": "King V Custom (1990-1991)",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "1990-1991"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
+    "model": "King V Custom (1990-1992)",
     "specs": {
         "neck": {
             "material": "Quarter Sawn Maple",
@@ -50,14 +35,14 @@
                 {
                     "variant": "As of early 1991",
                     "value": {
-                        "neck": "J-50N",
+                        "neck": "Jackson J-50N",
                         "bridge": "J-90"
                     }
                 },
                 {
                     "variant": "As of late 1991",
                     "value": {
-                        "neck": "J-50BC",
+                        "neck": "Jackson J-50BC",
                         "bridge": "J-90C"
                     }
                 }
@@ -65,7 +50,7 @@
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted, w/ cavity)"
+            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted w/ cavity)"
         },
         "finishes": [
             "MB (Metallic Black)",
@@ -78,9 +63,6 @@
         "source": "1991 Charvel & Grover Jackson Catalog (Japan)",
         "value": "JPY 195,000"
     },
-    "notes": [
-        "Later versions of this model (1992-1994) have 24 frets"
-    ],
     "pictures": null,
     "links": {
         "catalogues": [
@@ -97,6 +79,32 @@
             {
                 "label": "1991 King V Custom in Metallic Black",
                 "url": "https://reverb.com/uk/item/64258890-grover-jackson-king-v-custom-metallic-black-s-n-j101486-12-21"
+            },
+            {
+                "label": "1992 King V Custom in Pearl Blue White",
+                "url": "https://reverb.com/uk/item/85446598-1992-grover-jackson-king-v-mij-white"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 1990,
+            "until": 1992
+        },
+        "identification_guide": [
+            "Serial number starting with J0, J1 or J2 followed by 5 digits",
+            "Headstock decal w/ large \"Jackson\" logo followed by \"GROVER JACKSON\" in smaller print",
+            "22 frets (later models have 24)",
+            "Mother of pearl inlays",
+            "Ebony fretboard"
+        ],
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "Later versions of this model (made around 1992-1994) have 24 frets."
+                ]
             }
         ]
     }

@@ -1,21 +1,6 @@
 {
     "brand": "Grover Jackson",
     "model": "Randy Rhoads Custom (1991-1994)",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "1991-1994"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Quarter Sawn Maple",
@@ -47,13 +32,13 @@
         "electronics": {
             "controls": "2x Volume, 1x Tone, 3-Way Toggle Switch",
             "pickup_configuration": {
-                "neck": "J-50BC",
+                "neck": "Jackson J-50BC",
                 "bridge": "J-90C"
             }
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted, w/ cavity)"
+            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted w/ cavity)"
         },
         "finishes": [
             "MB (Metallic Black)",
@@ -68,9 +53,6 @@
         "source": "1993 Jackson & Charvel Catalog (Japan)",
         "value": "JPY 200,000"
     },
-    "notes": [
-        "Earlier versions of this model (1990-1991) have 22 frets and J-50N/J-50B pickups"
-    ],
     "pictures": {
         "mugshot": {
             "label": "Randy Rhoads Custom in DB",
@@ -92,6 +74,28 @@
             {
                 "label": "1994 Randy Rhoads Custom in Metallic Black",
                 "url": "https://reverb.com/uk/item/25100995-grover-jackson-randy-rhoads-custom-v-rrv-1994-metallic-black"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 1991,
+            "until": 1994
+        },
+        "identification_guide": [
+            "Serial number starting with J1, J2, J3 or J4 followed by 5 digits",
+            "Headstock decal w/ large \"Jackson\" logo followed by \"GROVER JACKSON\" in smaller print",
+            "24 frets (earlier models had 22)",
+            "Mother of pearl inlays",
+            "Ebony fretboard"
+        ],
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "Earlier versions of this model (made around 1990-1991) had 22 frets and J-50N/J-50B pickups."
+                ]
             }
         ]
     }

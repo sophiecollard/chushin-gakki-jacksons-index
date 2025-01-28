@@ -1,0 +1,103 @@
+{
+    "brand": "Jackson",
+    "model": "Kevin Bond Rhoads",
+    "specs": {
+        "neck": {
+            "material": "Three-piece Mahogany",
+            "construction": "neck_through",
+            "scale_length": "25.5\"",
+            "nut_width": "1.6875\"",
+            "fretboard": {
+                "material": "Ebony",
+                "fret_count": 22
+            },
+            "inlays": {
+                "material": "Pearloid",
+                "type": "Pentagrams"
+            },
+            "binding": {
+                "colour": "Ivory"
+            }
+        },
+        "headstock": {
+            "type": "regular",
+            "finish": "Black",
+            "logo_material": "Decal"
+        },
+        "body": {
+            "material": "Mahogany",
+            "top": null,
+            "binding": null
+        },
+        "electronics": {
+            "controls": "1x Volume",
+            "pickup_configuration": {
+                "bridge": "Seymour Duncan Tony Iommi SH-TI1B"
+            }
+        },
+        "hardware": {
+            "colour": "Black",
+            "bridge_configuration": "Tune-O-Matic w/ Schaller fine-tuning tailpiece"
+        },
+        "finishes": [
+            "Black w/ Blood Red Bevels",
+            "Black w/ Fluorescent Green Bevels"
+        ]
+    },
+    "price": {
+        "year": 2008,
+        "source": "June 2008 Jackson Guitars Price List",
+        "value": "USD 1,769.99"
+    },
+    "pictures": {
+        "mugshot": {
+            "label": "Kevin Bond Rhoads in Black w/ Blood Red Bevels",
+            "url": "https://jackson.ams3.cdn.digitaloceanspaces.com/mugshots/jackson-kevin-bond-red.jpg"
+        }
+    },
+    "links": {
+        "catalogues": [
+            {
+                "label": "2005 Jackson Guitars Catalog",
+                "url": "https://assets.ctfassets.net/4jcppgetbqrc/26TlCxR15qWwgU2k6oaAie/ac34b65ff4852be22c1485563b4745be/Jackson-2005-catalog.pdf"
+            },
+            {
+                "label": "February 2006 Jackson Guitars Price List",
+                "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2006.pdf"
+            },
+            {
+                "label": "February 2007 Jackson Guitars Price List",
+                "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2007.pdf"
+            },
+            {
+                "label": "June 2008 Jackson Guitars Price List",
+                "url": "https://assets.ctfassets.net/4jcppgetbqrc/1OxTyATehmCM8uoWsY6S0q/8afe6fd10a865464e6113051d8b49ce1/Jackson-Price-List-2008.pdf"
+            },
+            {
+                "label": "July 2008 Jackson Guitars Price List",
+                "url": "https://assets.ctfassets.net/4jcppgetbqrc/2RLzAMhwA8Sy8gm2cYwGmk/59ffb2aea3969bf906253d1213c0eda7/Jackson-Price-List-2008-Color.pdf"
+            }
+        ],
+        "reverb_listings": [
+            {
+                "label": "2005 Kevin Bond Rhoads in Black w/ Fluorescent Green Bevels",
+                "url": "https://reverb.com/item/37487922-jackson-stars-kevin-bond-signature-rrv-used-superjoint-ritual-made-in-japan?show_sold=true"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "worldwide",
+        "years_of_manufacture": {
+            "from": 2004,
+            "until": 2008
+        },
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "In Japan, this model was sold under the brand \"Jackson Stars\"."
+                ]
+            }
+        ]
+    }
+}

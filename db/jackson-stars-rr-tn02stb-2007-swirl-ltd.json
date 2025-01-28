@@ -1,25 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "RR-TN02STB LTD \"Swirl\" (2007 Limited Series)",
-    "tags": [
-        {
-            "colour": "dark",
-            "text": "2007 Limited Series"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2007-2008"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Maple",
@@ -57,7 +38,7 @@
         },
         "hardware": {
             "colour": "Chrome",
-            "bridge_configuration": "Tune-o-matic Gotoh bridge with string-through-body"
+            "bridge_configuration": "Gotoh Tune-O-Matic (w/ string-through-body)"
         },
         "finishes": [
             "BS (Blue Swirl)",
@@ -69,7 +50,6 @@
         "source": "2008 Jackson Stars Catalog",
         "value": "JPY 168,000"
     },
-    "notes": null,
     "pictures" : {
         "mugshot": {
             "label": "RR-TN02STB LTD in BS",
@@ -80,9 +60,17 @@
         "catalogues": [
             {
                 "label": "2008 Jackson Stars Catalog",
-                "url": "http://www.vintaxe.com/catalogs_pages/catalogs_american_jackson_stars_2008.php"
+                "url": "https://www.dropbox.com/scl/fi/6vdri7e6wg7v8m2x9ov82/2008-Jackson-Catalog-Japan.pdf?rlkey=tn0x8vag640wq4fxfcy5z1jy4&e=1&st=q4fdf0hl&dl=0"
             }
         ],
         "reverb_listings": []
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2007,
+            "until": 2008
+        },
+        "limited_series": "2007 Limited Series"
     }
 }

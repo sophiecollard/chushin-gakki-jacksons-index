@@ -1,20 +1,19 @@
 module Decoders exposing (..)
 
-import Json.Decode exposing (Decoder, andThen, fail, field, int, list, map, map2, map3, map4, map6, map7, map8, maybe, oneOf, string, succeed)
+import Json.Decode exposing (Decoder, andThen, fail, field, int, list, map, map2, map3, map4, map6, map7, maybe, oneOf, string, succeed)
 import Model exposing (..)
 
 
 entryDecoder : Decoder Entry
 entryDecoder =
-    map8 Entry
+    map7 Entry
         (field "brand" brandDecoder)
         (field "model" string)
-        (field "tags" (list tagDecoder))
         (field "specs" specsDecoder)
         (optionalField "price" priceDecoder)
-        (optionalField "notes" (list string))
         (optionalField "pictures" picturesDecoder)
         (optionalField "links" linksDecoder)
+        (optionalField "misc" miscDecoder)
 
 
 brandDecoder : Decoder Brand
@@ -38,26 +37,12 @@ brandDecoder =
     string |> andThen f
 
 
-tagDecoder : Decoder Tag
-tagDecoder =
-    oneOf
-        [ map2 SimpleTag
-            (field "colour" tagColourDecoder)
-            (field "text" string)
-        , map4 DoubleTag
-            (field "leftColour" tagColourDecoder)
-            (field "leftContent" string)
-            (field "rightColour" tagColourDecoder)
-            (field "rightContent" string)
-        ]
-
-
 tagColourDecoder : Decoder TagColour
 tagColourDecoder =
     let
         f : String -> Decoder TagColour
         f str =
-            case str of
+            case String.toLower str of
                 "dark" ->
                     succeed DarkTag
 
@@ -144,7 +129,7 @@ headstockTypeDecoder =
     let
         f : String -> Decoder HeadstockType
         f str =
-            case str of
+            case String.toLower str of
                 "regular" ->
                     succeed Regular
 
@@ -321,6 +306,52 @@ linkDecoder =
     map2 Link
         (field "label" string)
         (field "url" string)
+
+
+miscDecoder : Decoder Misc
+miscDecoder =
+    map6 Misc
+        (field "availability" availabilityDecoder)
+        (field "years_of_manufacture" yearsOfManufactureDecoder)
+        (optionalField "limited_series" string)
+        (optionalField "variants" (list string))
+        (optionalField "identification_guide" (list string))
+        (optionalField "additional_sections" (list sectionDecoder))
+
+
+availabilityDecoder : Decoder Availability
+availabilityDecoder =
+    let
+        f : String -> Decoder Availability
+        f str =
+            case String.toLower str of
+                "japan" ->
+                    succeed Japan
+
+                "worldwide" ->
+                    succeed Worldwide
+
+                "worldwide_excl_japan" ->
+                    succeed WorldwideExclJapan
+
+                _ ->
+                    fail "Not a valid availability"
+    in
+    string |> andThen f
+
+
+yearsOfManufactureDecoder : Decoder YearsOfManufacture
+yearsOfManufactureDecoder =
+    map2 YearsOfManufacture
+        (field "from" int)
+        (optionalField "until" int)
+
+
+sectionDecoder : Decoder Section
+sectionDecoder =
+    map2 Section
+        (field "title" string)
+        (field "contents" (list string))
 
 
 variantsDecoder : Decoder a -> Decoder (Variants a)

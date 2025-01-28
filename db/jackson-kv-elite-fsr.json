@@ -1,0 +1,77 @@
+{
+    "brand": "Jackson",
+    "model": "King V Elite FSR",
+    "specs": {
+        "neck": {
+            "material": "Maple",
+            "construction": "neck_through",
+            "scale_length": "25.5\"",
+            "nut_width": "1.6875\"",
+            "fretboard": {
+                "material": "Ebony",
+                "fret_count": 24
+            },
+            "inlays": {
+                "material": "Aluminoid",
+                "type": "Sharkfins"
+            },
+            "binding": {
+                "colour": "Ivory"
+            }
+        },
+        "headstock": {
+            "type": "regular",
+            "finish": "Matching",
+            "logo_material": "Decal"
+        },
+        "body": {
+            "material": "Alder",
+            "top": "Flame Maple Veneer on transparent finishes"
+        },
+        "electronics": {
+            "controls": "2x Volume, 1x Tone, 3-Way Switch",
+            "pickup_configuration": {
+                "neck": "Seymour Duncan SH-2",
+                "bridge": "TB-4"
+            }
+        },
+        "hardware": {
+            "colour": "Chrome",
+            "bridge_configuration": "Floyd Rose Original (recessed)"
+        },
+        "finishes": [
+            "Black",
+            "Quick Silver",
+            "Absynthe Frost",
+            "Amber Sunburst",
+            "White w/Absynthe Pinstripes"
+        ]
+    },
+    "price": null,
+    "pictures": {
+        "mugshot": {
+            "label": "King V Elite FSR in Amber Sunburst",
+            "url": "https://jackson.ams3.cdn.digitaloceanspaces.com/mugshots/jackson-king-v-elite-fsr-amber-sunburst.jpg"
+        }
+    },
+    "links": {
+        "catalogues": [],
+        "reverb_listings": [
+            {
+                "label": "2011 King V Elite FSR in Quick Silver",
+                "url": "https://reverb.com/item/49013397-jackson-king-v-elite-fsr-limited-2012-mij-2012-silver"
+            },
+            {
+                "label": "2011 King V Elite FSR in Absynthe Frost",
+                "url": "https://reverb.com/item/66071954-jackson-king-v-limited-fsr"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "worldwide",
+        "years_of_manufacture": {
+            "from": 2011
+        },
+        "limited_series": "2011 Limited Edition"
+    }
+}

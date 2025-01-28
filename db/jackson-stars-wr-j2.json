@@ -1,26 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "WR-J2",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2005-2006"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "WR-J2",
-        "WR-J2E",
-        "WR-J2K",
-        "WR-J2EK"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -73,11 +53,11 @@
             "bridge_configuration": [
                 {
                     "variant": "WR-J2/J2E",
-                    "value": "Schaller double locking tremolo (recessed)"
+                    "value": "Schaller Tremolo (recessed)"
                 },
                 {
                     "variant": "WR-J2K/J2EK",
-                    "value": "Kahler with Schaller Locking Nut"
+                    "value": "Kahler w/ Schaller Locking Nut"
                 }
             ]
         },
@@ -125,7 +105,6 @@
             }
         ]
     },
-    "notes": null,
     "pictures" : null,
     "links": {
         "catalogues": [
@@ -143,6 +122,19 @@
                 "label": "2005 WR-J2E in Dark Metallic Red",
                 "url": "https://reverb.com/uk/item/3217651-jackson-stars-wr-j2e-dmr-dark-metallic-red"
             }
+        ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2005,
+            "until": 2006
+        },
+        "variants": [
+            "WR-J2",
+            "WR-J2E",
+            "WR-J2K",
+            "WR-J2EK"
         ]
     }
 }

@@ -1,24 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "ASL-J1",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2004-2006"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "ASL-J1",
-        "ASL-J1E"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -44,7 +26,7 @@
         },
         "body": {
             "material": "Ash",
-            "top": "5A quilt maple top on transparent finishes",
+            "top": "5A Quilted Maple Top on transparent finishes",
             "binding": {
                 "colour": "Natural"
             }
@@ -94,7 +76,6 @@
             }
         ]
     },
-    "notes": null,
     "pictures" : null,
     "links": {
         "catalogues": [
@@ -112,6 +93,17 @@
                 "label": "2004 ASL-J1 in Transparent Blue",
                 "url": "https://reverb.com/item/74356177-jackson-stars-asl-j1-tbls-sn-042302-10-09"
             }
+        ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2004,
+            "until": 2006
+        },
+        "variants": [
+            "ASL-J1",
+            "ASL-J1E"
         ]
     }
 }

@@ -1,25 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "SL-TN01 (2008 Limited Series)",
-    "tags": [
-        {
-            "colour": "dark",
-            "text": "2008 Limited Series"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2008"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Maple",
@@ -45,7 +26,7 @@
         },
         "body": {
             "material": "Mahogany",
-            "top": "1/8\" flame maple top",
+            "top": "1/8\" Flame Maple Top",
             "binding": null
         },
         "electronics": {
@@ -70,13 +51,12 @@
         "source": "2008 Jackson Stars Catalog",
         "value": "JPY 294,000"
     },
-    "notes": null,
     "pictures" : null,
     "links": {
         "catalogues": [
             {
                 "label": "2008 Jackson Stars Catalog",
-                "url": "http://www.vintaxe.com/catalogs_pages/catalogs_american_jackson_stars_2008.php"
+                "url": "https://www.dropbox.com/scl/fi/6vdri7e6wg7v8m2x9ov82/2008-Jackson-Catalog-Japan.pdf?rlkey=tn0x8vag640wq4fxfcy5z1jy4&e=1&st=q4fdf0hl&dl=0"
             }
         ],
         "reverb_listings": [
@@ -85,5 +65,12 @@
                 "url": "https://reverb.com/uk/item/22710320-jackson-soloist-sl-tn01-limited-trans-pink-s-n-083865-free-shipping"
             }
         ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2008
+        },
+        "limited_series": "2008 Limited Series"
     }
 }

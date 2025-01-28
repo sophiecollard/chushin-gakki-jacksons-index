@@ -1,21 +1,6 @@
 {
     "brand": "Grover Jackson",
     "model": "Soloist Standard",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "1992-1994"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Quarter Sawn Maple",
@@ -50,14 +35,14 @@
                 {
                     "variant": "HH Configuration",
                     "value": {
-                        "neck": "J-50N",
+                        "neck": "Jackson J-50N",
                         "bridge": "J-80"
                     }
                 },
                 {
                     "variant": "SSH Configuration",
                     "value": {
-                        "neck": "J-100",
+                        "neck": "Jackson J-100",
                         "middle": "J-100",
                         "bridge": "J-80"
                     }
@@ -66,7 +51,7 @@
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted, w/ cavity)"
+            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted w/ cavity)"
         },
         "finishes": [
             "MB (Metallic Black)",
@@ -89,7 +74,6 @@
             }
         ]
     },
-    "notes": null,
     "pictures": {
         "mugshot": {
             "label": "Soloist Standard HH in BV",
@@ -117,5 +101,12 @@
                 "url": "https://reverb.com/uk/item/66307279-grover-jackson-soloist-standard-cb-sn-j402474-02-27"
             }
         ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 1992,
+            "until": 1994
+        }
     }
 }

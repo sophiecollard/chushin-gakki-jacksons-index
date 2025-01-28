@@ -1,25 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "RR-TN02 LTD (2007 Limited Series)",
-    "tags": [
-        {
-            "colour": "dark",
-            "text": "2007 Limited Series"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2007-2008"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Maple",
@@ -57,7 +38,7 @@
         },
         "hardware": {
             "colour": "Gold",
-            "bridge_configuration": "FRT-O 3000 (recessed)"
+            "bridge_configuration": "Floyd Rose FRT-O 3000 (recessed)"
         },
         "finishes": [
             "Ivory w/ Black Vintage Pinstripes"
@@ -68,13 +49,12 @@
         "source": "2008 Jackson Stars Catalog",
         "value": "JPY 210,000"
     },
-    "notes": null,
     "pictures" : null,
     "links": {
         "catalogues": [
             {
                 "label": "2008 Jackson Stars Catalog",
-                "url": "http://www.vintaxe.com/catalogs_pages/catalogs_american_jackson_stars_2008.php"
+                "url": "https://www.dropbox.com/scl/fi/6vdri7e6wg7v8m2x9ov82/2008-Jackson-Catalog-Japan.pdf?rlkey=tn0x8vag640wq4fxfcy5z1jy4&e=1&st=q4fdf0hl&dl=0"
             }
         ],
         "reverb_listings": [
@@ -87,5 +67,13 @@
                 "url": "https://reverb.com/uk/item/41541374-2008-jackson-stars-randy-rhodes-rr-tn02-ebony-fingerboard-snow-white-w-skb-molded-hard-case-made-in-japan"
             }
         ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2007,
+            "until": 2008
+        },
+        "limited_series": "2007 Limited Series"
     }
 }

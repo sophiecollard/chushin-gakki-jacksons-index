@@ -1,21 +1,6 @@
 {
     "brand": "Grover Jackson",
     "model": "Soloist",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "1990-1991"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Quarter Sawn Maple",
@@ -47,7 +32,7 @@
         "electronics": {
             "controls": "1x Volume, 1x Tone, 1x Mid Boost, 5-Way Switch",
             "pickup_configuration": {
-                "neck": "J-200",
+                "neck": "Jackson J-200",
                 "middle": "J-200",
                 "bridge": "J-50B",
                 "active_electronics": "JE-1200 Mid Boost"
@@ -55,7 +40,7 @@
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted, w/ cavity)"
+            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted w/ cavity)"
         },
         "finishes": [
             "Metallic Black",
@@ -69,7 +54,6 @@
         "source": "1991 Charvel & Grover Jackson Catalog (Japan)",
         "value": "JPY 185,000"
     },
-    "notes": null,
     "pictures": null,
     "links": {
         "catalogues": [
@@ -79,5 +63,12 @@
             }
         ],
         "reverb_listings": []
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 1990,
+            "until": 1991
+        }
     }
 }

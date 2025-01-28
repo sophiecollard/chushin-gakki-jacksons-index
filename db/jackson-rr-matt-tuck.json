@@ -1,0 +1,72 @@
+{
+    "brand": "Jackson",
+    "model": "Matt Tuck Signature Rhoads",
+    "specs": {
+        "neck": {
+            "material": "Maple",
+            "construction": "neck_through",
+            "scale_length": "25.5\"",
+            "nut_width": "1.6875\"",
+            "fretboard": {
+                "material": "Ebony",
+                "fret_count": 22
+            },
+            "inlays": {
+                "material": "Pearloid",
+                "type": "Chevrons"
+            },
+            "binding": {
+                "colour": "Black"
+            }
+        },
+        "headstock": {
+            "type": "regular",
+            "finish": "Matching",
+            "logo_material": "Decal"
+        },
+        "body": {
+            "material": "Alder"
+        },
+        "electronics": {
+            "controls": "2x Volume, 3-Way Toggle Switch",
+            "pickup_configuration": {
+                "neck": "EMG 85",
+                "bridge": "81"
+            }
+        },
+        "hardware": {
+            "colour": "Black",
+            "bridge_configuration": "Tune-O-Matic (w/ string-through-body)"
+        },
+        "finishes": [
+            "Snow White w/ Black Bevels",
+            "Silver Sparkle w/ Black Bevels",
+            "Black w/ Silver Sparkle Bevels"
+        ]
+    },
+    "pictures": null,
+    "links": {
+        "catalogues": [
+            {
+                "label": "2008/09 Jackson Guitars Catalog",
+                "url": "https://downloads.ctfassets.net/4jcppgetbqrc/5sItNnN8Gc6emeK4oaq2oK/9f3de0f1645c829cfa52bb10b4042479/Jackson-2008-2009-catalog.pdf"
+            },
+            {
+                "label": "February 2009 Jackson Guitars Price List",
+                "url": "https://assets.ctfassets.net/4jcppgetbqrc/1UjsBa6bKYQQEuyqmmGGWe/eff4c7dc5327dc305c9d685c9d8047dc/Jackson-Price-List-2009.pdf"
+            },
+            {
+                "label": "January 2010 Jackson Guitars Price List",
+                "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2010.pdf"
+            }
+        ],
+        "reverb_listings": []
+    },
+    "misc": {
+        "availability": "worldwide",
+        "years_of_manufacture": {
+            "from": 2008,
+            "until": 2010
+        }
+    }
+}

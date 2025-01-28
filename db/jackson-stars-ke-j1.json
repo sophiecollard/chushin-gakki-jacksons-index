@@ -1,26 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "KE-J1",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2004-2006"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "KE-J1",
-        "KE-J1E",
-        "KE-J1K",
-        "KE-J1EK"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -46,7 +26,7 @@
         },
         "body": {
             "material": "Ash",
-            "top": "5A flame maple veneer on transparent finishes",
+            "top": "5A Flame Maple Veneer on transparent finishes",
             "binding": null
         },
         "electronics": {
@@ -77,7 +57,7 @@
                 },
                 {
                     "variant": "KE-J1K/J1EK",
-                    "value": "Kahler with Schaller Locking Nut"
+                    "value": "Kahler w/ Schaller Locking Nut"
                 }
             ]
         },
@@ -111,9 +91,6 @@
             }
         ]
     },
-    "notes": [
-        "The Kahler equipped models (KE-J1K and KE-J1EK) only became available from 2005"
-    ],
     "pictures" : null,
     "links": {
         "catalogues": [
@@ -134,6 +111,27 @@
             {
                 "label": "2007 KE-J1 in Transparent Red (w/ upgrades and mislabelled as KE-J1K)",
                 "url": "https://reverb.com/ca/item/76916141-jackson-stars-ke-j1k-trans-red-sunburst-emg-jh-mod-sn-072123-12-08"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2004,
+            "until": 2006
+        },
+        "variants": [
+            "KE-J1",
+            "KE-J1E",
+            "KE-J1K",
+            "KE-J1EK"
+        ],
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "The Kahler equipped models (KE-J1K and KE-J1EK) only became available from 2005."
+                ]
             }
         ]
     }

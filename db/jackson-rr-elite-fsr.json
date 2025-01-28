@@ -1,0 +1,103 @@
+{
+    "brand": "Jackson",
+    "model": "Rhoads Elite FSR",
+    "specs": {
+        "neck": {
+            "material": "Maple",
+            "construction": "neck_through",
+            "scale_length": "25.5\"",
+            "nut_width": "1.6875\"",
+            "fretboard": {
+                "material": "Ebony",
+                "fret_count": 22
+            },
+            "inlays": {
+                "material": "Aluminoid",
+                "type": "Sharkfins"
+            },
+            "binding": {
+                "colour": "Ivory"
+            }
+        },
+        "headstock": {
+            "type": "regular",
+            "finish": "Matching",
+            "logo_material": "Decal"
+        },
+        "body": {
+            "material": "Alder",
+            "top": "Flame Maple Veneer on transparent finishes"
+        },
+        "electronics": {
+            "controls": "2x Volume, 1x Tone, 3-Way Toggle Switch",
+            "pickup_configuration": {
+                "neck": "Seymour Duncan SH-2",
+                "bridge": "TB-4"
+            }
+        },
+        "hardware": {
+            "colour": "Chrome",
+            "bridge_configuration": [
+                {
+                    "variant": "Trem version",
+                    "value": "Floyd Rose Original (recessed)"
+                },
+                {
+                    "variant": "Hard-tail version",
+                    "value": "Tune-O-Matic (w/ string-through-body)"
+                }
+            ]
+        },
+        "finishes": [
+            "Black",
+            "Quick Silver",
+            "Transparent Black",
+            "Black w/ Yellow Pinstripes",
+            "Ivory w/ Black Pinstripes",
+            "Silver Sparkle w/ Black Bevels"
+        ]
+    },
+    "price": null,
+    "pictures": {
+        "mugshot": {
+            "label": "Rhoads Elite FSR in Black w/ Yellow Pinstripes",
+            "url": "https://jackson.ams3.cdn.digitaloceanspaces.com/mugshots/jackson-rr-elite-fsr-black-yellow.png"
+        }
+    },
+    "links": {
+        "catalogues": [],
+        "reverb_listings": [
+            {
+                "label": "2011 Rhoads Elite FSR (w/ Floyd Rose) in Quick Silver",
+                "url": "https://reverb.com/item/73576627-jackson-mij-randy-rhoads-elite-series-2012-silver-spark"
+            },
+            {
+                "label": "2011 Rhoads Elite FSR (w/ Floyd Rose) in Transparent Black",
+                "url": "https://reverb.com/item/19237778-jackson-rhoads-elite-fsr-limited-2011-black-flame"
+            },
+            {
+                "label": "2011 Rhoads Elite FSR (w/ Floyd Rose) in Black w/ Yellow Pinstripes",
+                "url": "https://reverb.com/item/12300106-jackson-rhoads-elite-fsr-limited-electric-guitar-black-gold-bevels-w-case"
+            },
+            {
+                "label": "2011 Rhoads Elite FSR (w/ Floyd Rose) in Ivory w/ Black Pinstripes",
+                "url": "https://reverb.com/item/62531716-jackson-rhoads-elite-fsr-limited-2011-ivory-with-black-pinstripe-made-in-japan-emg-het-set-ohsc"
+            },
+            {
+                "label": "2011 Rhoads Elite FSR (w/ Floyd Rose) in Silver Sparkle w/ Black Bevels",
+                "url": "https://reverb.com/item/24739233-jackson-rhoads-elite-fsr-2011-silver-sparkle-with-black-bevels"
+            },
+            {
+                "label": "2011 Rhoads Elite FSR (w/ Tune-O-Matic) in Silver Sparkle w/ Black Bevels",
+                "url": "https://reverb.com/item/26644517-2011-jackson-rhoads-elite-fsr-limited-in-silver-sparkle"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "worldwide",
+        "years_of_manufacture": {
+            "from": 2011
+        },
+        "limited_series": "2011 Limited Edition"
+    }
+}

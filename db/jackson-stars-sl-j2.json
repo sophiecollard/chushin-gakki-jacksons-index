@@ -1,28 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "SL-J2",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2004-2006"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "SL-J2",
-        "SL-J2E",
-        "SL-J2K",
-        "SL-J2EK",
-        "SL-J2B",
-        "SL-J2EB"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -75,15 +53,15 @@
             "bridge_configuration": [
                 {
                     "variant": "SL-J2/J2E",
-                    "value": "Schaller double locking tremolo (recessed)"
+                    "value": "Schaller Tremolo (recessed)"
                 },
                 {
                     "variant": "SL-J2K/J2EK",
-                    "value": "Kahler with Schaller Locking Nut"
+                    "value": "Kahler w/ Schaller Locking Nut"
                 },
                 {
                     "variant": "SL-J2B/J2BE",
-                    "value": "Tune-o-matic Gotoh bridge with string-through-body"
+                    "value": "Gotoh Tune-O-Matic (w/ string-through-body)"
                 }
             ]
         },
@@ -139,10 +117,7 @@
             }
         ]
     },
-    "notes": [
-        "The Kahler equipped models (SL-J2K and SL-J2EK) only became available from 2005"
-    ],
-    "pictures" : null,
+    "pictures": null,
     "links": {
         "catalogues": [
             {
@@ -158,6 +133,29 @@
             {
                 "label": "2005 SL-J2EB in Dark Metallic Red (mislabelled as SL-TN02)",
                 "url": "https://reverb.com/item/79778180-jackson-stars-sl-tn02-made-in-japan-through-neck-2005-dmr-dark-metallic-red"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2004,
+            "until": 2006
+        },
+        "variants": [
+            "SL-J2",
+            "SL-J2E",
+            "SL-J2K",
+            "SL-J2EK",
+            "SL-J2B",
+            "SL-J2EB"
+        ],
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "The Kahler equipped models (SL-J2K and SL-J2EK) only became available from 2005."
+                ]
             }
         ]
     }

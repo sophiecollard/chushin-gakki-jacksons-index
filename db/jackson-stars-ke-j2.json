@@ -1,26 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "KE-J2",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2004-2006"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "KE-J2",
-        "KE-J2E",
-        "KE-J2K",
-        "KE-J2EK"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -73,11 +53,11 @@
             "bridge_configuration": [
                 {
                     "variant": "KE-J2/J2E",
-                    "value": "Schaller double locking tremolo (recessed)"
+                    "value": "Schaller Tremolo (recessed)"
                 },
                 {
                     "variant": "KE-J2K/J2EK",
-                    "value": "Kahler with Schaller Locking Nut"
+                    "value": "Kahler w/ Schaller Locking Nut"
                 }
             ]
         },
@@ -127,9 +107,6 @@
             }
         ]
     },
-    "notes": [
-        "The Kahler equipped models (KE-J2K and KE-J2EK) only became available from 2005"
-    ],
     "pictures" : null,
     "links": {
         "catalogues": [
@@ -143,5 +120,26 @@
             }
         ],
         "reverb_listings": []
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2004,
+            "until": 2006
+        },
+        "variants": [
+            "KE-J2",
+            "KE-J2E",
+            "KE-J2K",
+            "KE-J2EK"
+        ],
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "The Kahler equipped models (KE-J2K and KE-J2EK) only became available from 2005."
+                ]
+            }
+        ]
     }
 }

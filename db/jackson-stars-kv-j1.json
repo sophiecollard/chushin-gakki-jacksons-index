@@ -1,26 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "KV-J1",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2004-2006"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "KV-J1",
-        "KV-J1E",
-        "KV-J1K",
-        "KV-J1EK"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -46,7 +26,7 @@
         },
         "body": {
             "material": "Ash",
-            "top": "5A flame maple veneer on transparent finishes",
+            "top": "5A Flame Maple Veneer on transparent finishes",
             "binding": null
         },
         "electronics": {
@@ -77,7 +57,7 @@
                 },
                 {
                     "variant": "KV-J1K/J1EK",
-                    "value": "Kahler with Schaller Locking Nut"
+                    "value": "Kahler w/ Schaller Locking Nut"
                 }
             ]
         },
@@ -111,9 +91,6 @@
             }
         ]
     },
-    "notes": [
-        "The Kahler equipped models (KV-J1K and KV-J1EK) only became available from 2005"
-    ],
     "pictures" : null,
     "links": {
         "catalogues": [
@@ -127,5 +104,26 @@
             }
         ],
         "reverb_listings": []
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2004,
+            "until": 2006
+        },
+        "variants": [
+            "KV-J1",
+            "KV-J1E",
+            "KV-J1K",
+            "KV-J1EK"
+        ],
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "The Kahler equipped models (KV-J1K and KV-J1EK) only became available from 2005."
+                ]
+            }
+        ]
     }
 }

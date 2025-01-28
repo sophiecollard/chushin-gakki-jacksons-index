@@ -1,21 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "RR-J2SP",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2005-2007"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Maple",
@@ -75,7 +60,6 @@
             }
         ]
     },
-    "notes": null,
     "pictures" : {
         "mugshot": {
             "label": "RR-J2SP",
@@ -99,5 +83,12 @@
                 "url": "https://reverb.com/item/85047946-jackson-stars-j2sp-2007-alexi-wild-child-laiho-model-minty-condition"
             }
         ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2005,
+            "until": 2007
+        }
     }
 }

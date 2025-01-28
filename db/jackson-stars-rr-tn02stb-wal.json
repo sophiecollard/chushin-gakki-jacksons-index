@@ -1,25 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "RR-TN02STB WALNUT (2009 Limited Series)",
-    "tags": [
-        {
-            "colour": "dark",
-            "text": "2009 Limited Series"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2008-2009"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Maple",
@@ -55,7 +36,7 @@
         },
         "hardware": {
             "colour": "Gold",
-            "bridge_configuration": "Tune-o-matic Gotoh bridge with string-through-body"
+            "bridge_configuration": "Gotoh Tune-O-Matic (w/ string-through-body)"
         },
         "finishes": [
             "Natural"
@@ -66,7 +47,6 @@
         "source": "https://www.barks.jp/news/?id=1000046259",
         "value": "JPY 199,500"
     },
-    "notes": null,
     "pictures": {
         "mugshot": {
             "label": "RR-TN02STB WALNUT",
@@ -81,5 +61,13 @@
                 "url": "https://reverb.com/item/3569818-jackson-stars-randy-rhoads-rr-tn02-wal-natural-walnut-w-jackson-hardcase"
             }
         ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2008,
+            "until": 2009
+        },
+        "limited_series": "2009 Limited Series"
     }
 }

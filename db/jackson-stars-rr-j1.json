@@ -1,28 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "RR-J1",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2004-2006"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "RR-J1",
-        "RR-J1E",
-        "RR-J1K",
-        "RR-J1EK",
-        "RR-J1B",
-        "RR-J1EB"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -48,7 +26,7 @@
         },
         "body": {
             "material": "Ash",
-            "top": "5A flame maple veneer on transparent finishes",
+            "top": "5A Flame Maple Veneer on transparent finishes",
             "binding": null
         },
         "electronics": {
@@ -79,11 +57,11 @@
                 },
                 {
                     "variant": "RR-J1K/J1EK",
-                    "value": "Kahler with Schaller Locking Nut"
+                    "value": "Kahler w/ Schaller Locking Nut"
                 },
                 {
                     "variant": "RR-J1B/J1BE",
-                    "value": "Tune-o-matic Gotoh bridge with string-through-body"
+                    "value": "Gotoh Tune-O-Matic (w/ string-through-body)"
                 }
             ]
         },
@@ -125,9 +103,6 @@
             }
         ]
     },
-    "notes": [
-        "The Kahler equipped models (RR-J1K and RR-J1EK) only became available from 2005"
-    ],
     "pictures" : {
         "mugshot": {
             "label": "RR-J1BE in TRS",
@@ -146,5 +121,28 @@
             }
         ],
         "reverb_listings": []
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2004,
+            "until": 2006
+        },
+        "variants": [
+            "RR-J1",
+            "RR-J1E",
+            "RR-J1K",
+            "RR-J1EK",
+            "RR-J1B",
+            "RR-J1EB"
+        ],
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "The Kahler equipped models (RR-J1K and RR-J1EK) only became available from 2005."
+                ]
+            }
+        ]
     }
 }

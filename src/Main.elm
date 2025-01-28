@@ -6,6 +6,8 @@ import Html exposing (Html, a, br, div, h1, h2, h3, i, img, li, nav, p, span, st
 import Html.Attributes exposing (class, href, src, style, target)
 import Html.Events exposing (onClick)
 import Http
+import ListUtils
+import MaybeUtils
 import Model exposing (..)
 import Printers exposing (..)
 
@@ -87,7 +89,7 @@ update msg model =
                     ( { model | mainContent = Failure "Failed to load file as entry" }, Cmd.none )
 
         SelectBrand brand ->
-            ( { model | menu = { menu | brand = brand } }, Cmd.none )
+            ( { model | menu = { menu | brand = brand, shape = Rhoads } }, Cmd.none )
 
         SelectShape shape ->
             ( { model | menu = { menu | shape = shape } }, Cmd.none )
@@ -132,12 +134,12 @@ view model =
 
                 LoadedEntry entry ->
                     [ h1 [ class "title is-2" ] [ text (printBrand entry.brand ++ " " ++ entry.model) ]
-                    , viewTags entry.tags
+                    , entry.misc |> Maybe.map getTags |> Maybe.withDefault [] |> viewTags
                     , div [ class "columns" ]
                         [ div [ class "column is-9" ]
                             [ viewSpecs entry.specs
                             , viewPrice entry.price
-                            , viewNotes entry.notes
+                            , viewMisc entry.misc
                             , viewLinks entry.links
                             ]
                         , div [ class "column is-3" ]
@@ -169,7 +171,9 @@ viewHeader =
                         ]
                     , div [ class "navbar-menu" ]
                         [ div [ class "navbar-start" ]
-                            [ a [ class "navbar-item", onClick (SelectBrand GroverJackson) ]
+                            [ a [ class "navbar-item", onClick (SelectBrand Jackson) ]
+                                [ text "Jackson" ]
+                            , a [ class "navbar-item", onClick (SelectBrand GroverJackson) ]
                                 [ text "Grover Jackson" ]
                             , a [ class "navbar-item", onClick (SelectBrand JacksonStars) ]
                                 [ text "Jackson Stars" ]
@@ -211,9 +215,18 @@ viewMenu menu =
                 , viewUnlessHidden viewGroverJacksonSoloistMenuList (menu.shape == Soloist)
                 ]
 
+        Jackson ->
+            div [ class "menu" ]
+                [ p [ class "menu-label" ] [ text "Jackson models" ]
+                , p [ class "menu-label", onClick (SelectShape Rhoads) ] [ a [] [ text "Rhoads" ] ]
+                , viewUnlessHidden viewJacksonRhoadsMenuList (menu.shape == Rhoads)
+                ]
+
         JacksonStars ->
             div [ class "menu" ]
                 [ p [ class "menu-label" ] [ text "Jackson Stars models" ]
+                , p [ class "menu-label", onClick (SelectShape ArchtopSoloist) ] [ a [] [ text "Archtop Soloist" ] ]
+                , viewUnlessHidden viewJacksonStarsArchtopSoloistMenuList (menu.shape == ArchtopSoloist)
                 , p [ class "menu-label", onClick (SelectShape Kelly) ] [ a [] [ text "Kelly" ] ]
                 , viewUnlessHidden viewJacksonStarsKellyMenuList (menu.shape == Kelly)
                 , p [ class "menu-label", onClick (SelectShape KellyStar) ] [ a [] [ text "Kelly Star" ] ]
@@ -226,15 +239,6 @@ viewMenu menu =
                 , viewUnlessHidden viewJacksonStarsSoloistMenuList (menu.shape == Soloist)
                 , p [ class "menu-label", onClick (SelectShape Warrior) ] [ a [] [ text "Warrior" ] ]
                 , viewUnlessHidden viewJacksonStarsWarriorMenuList (menu.shape == Warrior)
-                ]
-
-        Jackson ->
-            div [ class "menu" ]
-                [ p [ class "menu-label", onClick (SelectShape Kelly) ] [ a [] [ text "Kelly" ] ]
-                , p [ class "menu-label", onClick (SelectShape KingV) ] [ a [] [ text "King V" ] ]
-                , p [ class "menu-label", onClick (SelectShape Rhoads) ] [ a [] [ text "Rhoads" ] ]
-                , p [ class "menu-label", onClick (SelectShape Soloist) ] [ a [] [ text "Soloist" ] ]
-                , p [ class "menu-label", onClick (SelectShape Warrior) ] [ a [] [ text "Warrior" ] ]
                 ]
 
 
@@ -251,8 +255,8 @@ viewGroverJacksonKingVMenuList : Html Msg
 viewGroverJacksonKingVMenuList =
     ul [ class "menu-list" ]
         [ li
-            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/grover-jackson-kv-custom-1990-91.json") ]
-            [ a [] [ text "King V Custom (1990-1991)" ] ]
+            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/grover-jackson-kv-custom-1990-92.json") ]
+            [ a [] [ text "King V Custom (1990-1992)" ] ]
         , li
             [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/grover-jackson-kv-custom-1992-94.json") ]
             [ a [] [ text "King V Custom (1992-1994)" ] ]
@@ -298,6 +302,36 @@ viewGroverJacksonSoloistMenuList =
         , li
             [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/grover-jackson-sl-special-custom.json") ]
             [ a [] [ text "Soloist Special Custom" ] ]
+        ]
+
+
+viewJacksonStarsArchtopSoloistMenuList : Html Msg
+viewJacksonStarsArchtopSoloistMenuList =
+    ul [ class "menu-list" ]
+        [ li
+            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-stars-asl-j1.json") ]
+            [ a [] [ text "ASL-J1" ] ]
+        , li
+            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-stars-asl-tn01-2007-ltd.json") ]
+            [ a [] [ text "ASL-TN01 (2007 Limited)" ] ]
+        ]
+
+
+viewJacksonRhoadsMenuList : Html Msg
+viewJacksonRhoadsMenuList =
+    ul [ class "menu-list" ]
+        [ li
+            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-kevin-bond-rhoads.json") ]
+            [ a [] [ text "Kevin Bond Rhoads" ] ]
+        , li
+            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-rr24-2006-ltd.json") ]
+            [ a [] [ text "RR24 (2006 Limited Edition)" ] ]
+        , li
+            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-rr24.json") ]
+            [ a [] [ text "RR24" ] ]
+        , li
+            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-rr24m.json") ]
+            [ a [] [ text "RR24M" ] ]
         ]
 
 
@@ -413,9 +447,6 @@ viewJacksonStarsSoloistMenuList : Html Msg
 viewJacksonStarsSoloistMenuList =
     ul [ class "menu-list" ]
         [ li
-            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-stars-asl-j1.json") ]
-            [ a [] [ text "ASL-J1" ] ]
-        , li
             [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-stars-sl-j1.json") ]
             [ a [] [ text "SL-J1" ] ]
         , li
@@ -424,9 +455,6 @@ viewJacksonStarsSoloistMenuList =
         , li
             [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-stars-sl-tn01.json") ]
             [ a [] [ text "SL-TN01" ] ]
-        , li
-            [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-stars-asl-tn01-2007-ltd.json") ]
-            [ a [] [ text "ASL-TN01 (2007 Limited)" ] ]
         , li
             [ onClick (GetEntry "https://jackson.ams3.digitaloceanspaces.com/db/jackson-stars-sl-tn01-2007-ltd.json") ]
             [ a [] [ text "SL-TN01 (2007 Limited)" ] ]
@@ -483,10 +511,10 @@ viewTag tag =
                     ]
                 ]
 
-        DoubleTag leftColour leftContent rightColour rightContent ->
+        DoubleTag rightColour leftContent rightContent ->
             div [ class "control" ]
                 [ div [ class "tags has-addons" ]
-                    [ span [ class ("tag is-" ++ printTagColour leftColour) ]
+                    [ span [ class "tag" ]
                         [ text leftContent ]
                     , span [ class ("tag is-" ++ printTagColour rightColour) ]
                         [ text rightContent ]
@@ -792,18 +820,43 @@ viewPrice maybePrice =
                         )
 
 
-viewNotes : Maybe (List String) -> Html msg
-viewNotes maybeNotes =
-    case maybeNotes of
+viewMisc : Maybe Misc -> Html msg
+viewMisc maybeMisc =
+    case maybeMisc of
         Nothing ->
             div [] []
 
-        Just [] ->
-            div [] []
+        Just misc ->
+            div []
+                (List.concat
+                    [ misc.identificationGuide |> MaybeUtils.toList |> List.filter ListUtils.nonEmpty |> List.map viewIdentficationGuide
+                    , misc.additionalSections |> MaybeUtils.toList |> List.concatMap viewAdditionalSections
+                    ]
+                )
 
-        Just notes ->
-            div [ style "margin-top" "2rem" ]
-                (h2 [ class "title is-4" ] [ text "Misc" ] :: List.map (\n -> p [] [ text n ]) notes)
+
+viewIdentficationGuide : List String -> Html msg
+viewIdentficationGuide identificationGuide =
+    div [ style "margin-top" "2rem" ]
+        [ h2 [ class "title is-4" ] [ text "Identification Guide" ]
+        , p [] [ text "To identify specimens of this model, look out for the following features:" ]
+        , br [] []
+        , div [ class "content" ]
+            [ ul [] (List.map (\c -> li [] [ text c ]) identificationGuide) ]
+        ]
+
+
+viewAdditionalSections : List Section -> List (Html msg)
+viewAdditionalSections sections =
+    List.map viewAdditionalSection sections
+
+
+viewAdditionalSection : Section -> Html msg
+viewAdditionalSection section =
+    div [ style "margin-top" "2rem" ]
+        (h2 [ class "title is-4" ] [ text section.title ]
+            :: List.map (\c -> p [] [ text c ]) section.contents
+        )
 
 
 viewLinks : Maybe Links -> Html msg

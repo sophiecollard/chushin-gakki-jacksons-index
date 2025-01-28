@@ -1,15 +1,16 @@
 module Model exposing (..)
 
+import MaybeUtils
+
 
 type alias Entry =
     { brand : Brand
     , model : String
-    , tags : List Tag
     , specs : Specs
     , price : Maybe Price
-    , notes : Maybe (List String)
     , pictures : Maybe Pictures
     , links : Maybe Links
+    , misc : Maybe Misc
     }
 
 
@@ -20,7 +21,8 @@ type Brand
 
 
 type Shape
-    = Kelly
+    = ArchtopSoloist
+    | Kelly
     | KellyStar
     | KingV
     | Rhoads
@@ -30,7 +32,7 @@ type Shape
 
 type Tag
     = SimpleTag TagColour String
-    | DoubleTag TagColour String TagColour String
+    | DoubleTag TagColour String String
 
 
 type TagColour
@@ -167,6 +169,72 @@ type alias Links =
     { catalogues : List Link
     , reverbListings : List Link
     }
+
+
+type alias Misc =
+    { availability : Availability
+    , yearsOfManufacture : YearsOfManufacture
+    , limitedSeries : Maybe String
+    , variants : Maybe (List String)
+    , identificationGuide : Maybe (List String)
+    , additionalSections : Maybe (List Section)
+    }
+
+
+type Availability
+    = Japan
+    | Worldwide
+    | WorldwideExclJapan
+
+
+type alias YearsOfManufacture =
+    { from : Int
+    , until : Maybe Int
+    }
+
+
+type alias Section =
+    { title : String
+    , contents : List String
+    }
+
+
+getTags : Misc -> List Tag
+getTags misc =
+    List.concat
+        [ misc.limitedSeries |> Maybe.map getLimitedSeriesTag |> MaybeUtils.toList
+        , [ getAvailabilityTag misc.availability
+          , getYearsOfManufactureTag misc.yearsOfManufacture
+          ]
+        ]
+
+
+getAvailabilityTag : Availability -> Tag
+getAvailabilityTag availability =
+    case availability of
+        Japan ->
+            DoubleTag DangerTag "Availability" "Japan"
+
+        Worldwide ->
+            DoubleTag SuccessTag "Availability" "Worldwide"
+
+        WorldwideExclJapan ->
+            DoubleTag WarningTag "Availability" "Worldwide (excl. Japan)"
+
+
+getYearsOfManufactureTag : YearsOfManufacture -> Tag
+getYearsOfManufactureTag yom =
+    case yom.until of
+        Nothing ->
+            DoubleTag LinkTag "Year of Manufacture" (String.fromInt yom.from)
+
+        Just until ->
+            DoubleTag LinkTag "Years of Manufacture" (String.fromInt yom.from ++ "-" ++ String.fromInt until)
+
+
+getLimitedSeriesTag : String -> Tag
+getLimitedSeriesTag label =
+    SimpleTag DarkTag label
 
 
 type alias Link =

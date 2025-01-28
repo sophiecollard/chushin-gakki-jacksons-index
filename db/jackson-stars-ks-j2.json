@@ -1,26 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "KS-J2",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2004"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "KS-J2",
-        "KS-J2E",
-        "KS-J2K",
-        "KS-J2EK"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -70,7 +50,7 @@
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Schaller double locking tremolo (recessed)"
+            "bridge_configuration": "Schaller Tremolo (recessed)"
         },
         "finishes": [
             "BK (Black)",
@@ -102,7 +82,6 @@
             }
         ]
     },
-    "notes": null,
     "pictures" : null,
     "links": {
         "catalogues": [
@@ -112,5 +91,17 @@
             }
         ],
         "reverb_listings": []
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2004
+        },
+        "variants": [
+            "KS-J2",
+            "KS-J2E",
+            "KS-J2K",
+            "KS-J2EK"
+        ]
     }
 }

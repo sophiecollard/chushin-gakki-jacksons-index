@@ -1,24 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "RR-TN02STB",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2007-2009"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "RR-TN02STB",
-        "RR-TN02STB/EMG"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -68,7 +50,7 @@
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Tune-o-matic Gotoh bridge with string-through-body"
+            "bridge_configuration": "Gotoh Tune-O-Matic (w/ string-through-body)"
         },
         "finishes": [
             "BLK (Black)"
@@ -88,15 +70,25 @@
             }
         ]
     },
-    "notes": null,
     "pictures" : null,
     "links": {
         "catalogues": [
             {
                 "label": "2008 Jackson Stars Catalog",
-                "url": "http://www.vintaxe.com/catalogs_pages/catalogs_american_jackson_stars_2008.php"
+                "url": "https://www.dropbox.com/scl/fi/6vdri7e6wg7v8m2x9ov82/2008-Jackson-Catalog-Japan.pdf?rlkey=tn0x8vag640wq4fxfcy5z1jy4&e=1&st=q4fdf0hl&dl=0"
             }
         ],
         "reverb_listings": []
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2007,
+            "until": 2009
+        },
+        "variants": [
+            "RR-TN02STB",
+            "RR-TN02STB/EMG"
+        ]
     }
 }

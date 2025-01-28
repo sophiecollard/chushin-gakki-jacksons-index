@@ -1,0 +1,73 @@
+{
+    "brand": "Jackson",
+    "model": "RR24 (2006 Limited Edition)",
+    "specs": {
+        "neck": {
+            "material": "Maple",
+            "construction": "neck_through",
+            "scale_length": "25.5\"",
+            "nut_width": "1.6875\"",
+            "fretboard": {
+                "material": "Ebony",
+                "fret_count": 24
+            },
+            "inlays": {
+                "material": "Pearloid",
+                "type": "Reverse Sharkfins"
+            },
+            "binding": {
+                "colour": "Ivory"
+            }
+        },
+        "headstock": {
+            "type": "regular",
+            "finish": "Matching",
+            "logo_material": "Decal"
+        },
+        "body": {
+            "material": "Alder",
+            "top": null,
+            "binding": null
+        },
+        "electronics": {
+            "controls": "1x Volume",
+            "pickup_configuration": {
+                "bridge": "EMG 81"
+            }
+        },
+        "hardware": {
+            "colour": "Black",
+            "bridge_configuration": "Floyd Rose Original (recessed)"
+        },
+        "finishes": [
+            "Black w/ Yellow Bevels"
+        ]
+    },
+    "pictures": {
+        "mugshot": {
+            "label": "RR24 (2006 Limited Edition)",
+            "url": "https://jackson.ams3.cdn.digitaloceanspaces.com/mugshots/jackson-rr24-2006-ltd.png"
+        }
+    },
+    "links": {
+        "catalogues": [],
+        "reverb_listings": [
+            {
+                "label": "2006 RR24 in Black w/ Yellow Bevels",
+                "url": "https://reverb.com/uk/item/83363723-jackson-pro-series-rr24-rhoads-2006-black-yellow?show_sold=true"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "worldwide_excl_japan",
+        "years_of_manufacture": {
+            "from": 2006
+        },
+        "identification_guide": [
+            "Serial number starting with 06 followed by 4 additional digits",
+            "Yellow headstock logo and body bevels",
+            "Ivory neck binding",
+            "Reverse sharkfin inlays"
+        ]
+    }
+}

@@ -1,21 +1,6 @@
 {
     "brand": "Grover Jackson",
     "model": "Randy Rhoads Professional",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "1990-1994"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Quarter Sawn Maple",
@@ -47,13 +32,13 @@
         "electronics": {
             "controls": "2x Volume, 1x Tone, 3-Way Toggle Switch",
             "pickup_configuration": {
-                "neck": "J-50N",
+                "neck": "Jackson J-50N",
                 "bridge": "J-50B"
             }
         },
         "hardware": {
             "colour": "Gold",
-            "bridge_configuration": "Tune-o-matic w/ string-through-body"
+            "bridge_configuration": "Tune-O-Matic (w/ string-through-body)"
         },
         "finishes": [
             "Black"
@@ -64,7 +49,6 @@
         "source": "1993 Jackson & Charvel Catalog (Japan)",
         "value": "JPY 170,000"
     },
-    "notes": null,
     "pictures": {
         "mugshot": {
             "label": "Randy Rhoads Professional",
@@ -99,6 +83,19 @@
                 "label": "1994 Randy Rhoads Professional",
                 "url": "https://reverb.com/uk/item/32789920-1994-jackson-randy-rhoads-custom-made-in-japan"
             }
+        ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 1990,
+            "until": 1994
+        },
+        "identification_guide": [
+            "Serial number starting with J0, J1, J2, J3 or J4 followed by 5 digits",
+            "Headstock decal w/ large \"Jackson\" logo followed by \"GROVER JACKSON\" in smaller print",
+            "Mother of pearl inlays",
+            "Ebony fretboard"
         ]
     }
 }

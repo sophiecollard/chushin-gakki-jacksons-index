@@ -1,21 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "RR-TN01STB",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2007-2009"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Maple",
@@ -53,7 +38,7 @@
         },
         "hardware": {
             "colour": "Gold",
-            "bridge_configuration": "Tune-o-matic Gotoh bridge with string-through-body"
+            "bridge_configuration": "Gotoh Tune-O-Matic (w/ string-through-body)"
         },
         "finishes": [
             "BLK (Black)"
@@ -64,13 +49,13 @@
         "source": "2008 Jackson Stars Catalog",
         "value": "JPY 252,000"
     },
-    "notes": null,
+    "additional_sections": null,
     "pictures" : null,
     "links": {
         "catalogues": [
             {
                 "label": "2008 Jackson Stars Catalog",
-                "url": "http://www.vintaxe.com/catalogs_pages/catalogs_american_jackson_stars_2008.php"
+                "url": "https://www.dropbox.com/scl/fi/6vdri7e6wg7v8m2x9ov82/2008-Jackson-Catalog-Japan.pdf?rlkey=tn0x8vag640wq4fxfcy5z1jy4&e=1&st=q4fdf0hl&dl=0"
             }
         ],
         "reverb_listings": [
@@ -79,5 +64,12 @@
                 "url": "https://reverb.com/uk/item/68237520-jackson-stars-rr-tn01-black-sn-080225-04-20"
             }
         ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2007,
+            "until": 2009
+        }
     }
 }

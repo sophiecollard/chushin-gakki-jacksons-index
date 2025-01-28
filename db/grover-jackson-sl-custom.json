@@ -1,21 +1,6 @@
 {
     "brand": "Grover Jackson",
     "model": "Soloist Custom",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "1991-1994"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Quarter Sawn Maple",
@@ -50,7 +35,7 @@
                 {
                     "variant": "HH Configuration",
                     "value": {
-                        "neck": "J-50BC",
+                        "neck": "Jackson J-50BC",
                         "bridge": "J-80C",
                         "active_electronics": "JE-1200 Mid Boost"
                     }
@@ -58,7 +43,7 @@
                 {
                     "variant": "SSH Configuration",
                     "value": {
-                        "neck": "J-200",
+                        "neck": "Jackson J-200",
                         "middle": "J-200",
                         "bridge": "J-50BC",
                         "active_electronics": "JE-1200 Mid Boost"
@@ -68,13 +53,13 @@
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted, w/ cavity)"
+            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted w/ cavity)"
         },
         "finishes": [
             "MB (Metallic Black)",
             "PBW (Pearl Blue White)",
-            "PPU (Platinium Purple, 1991 only)",
-            "PPC (Platinium Pearl Crackle, 1991 only)",
+            "PPU (Platinium Purple, 1991-1992 only)",
+            "PPC (Platinium Pearl Crackle, 1991-1992 only)",
             "WB (Wizard Blue, from 1992 or 1993)"
         ]
     },
@@ -83,7 +68,6 @@
         "source": "1993 Jackson & Charvel Catalog (Japan)",
         "value": "JPY 185,000"
     },
-    "notes": null,
     "pictures": {
         "mugshot": {
             "label": "Soloist Custom HH in WB",
@@ -111,5 +95,12 @@
                 "url": "https://reverb.com/uk/item/82853999-1990s-grover-jackson-soloist-custom-hh-metallic-black-japan"
             }
         ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 1991,
+            "until": 1994
+        }
     }
 }

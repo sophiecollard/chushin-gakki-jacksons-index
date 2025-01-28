@@ -1,28 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "RR-J2",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2004-2006"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "RR-J2",
-        "RR-J2E",
-        "RR-J2K",
-        "RR-J2EK",
-        "RR-J2B",
-        "RR-J2EB"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -75,15 +53,15 @@
             "bridge_configuration": [
                 {
                     "variant": "RR-J2/J2E",
-                    "value": "Schaller double locking tremolo (recessed)"
+                    "value": "Schaller Tremolo (recessed)"
                 },
                 {
                     "variant": "RR-J2K/J2EK",
-                    "value": "Kahler with Schaller Locking Nut"
+                    "value": "Kahler w/ Schaller Locking Nut"
                 },
                 {
                     "variant": "RR-J2B/J2BE",
-                    "value": "Tune-o-matic Gotoh bridge with string-through-body"
+                    "value": "Gotoh Tune-O-Matic (w/ string-through-body)"
                 }
             ]
         },
@@ -141,9 +119,6 @@
             }
         ]
     },
-    "notes": [
-        "The Kahler equipped models (RR-J2K and RR-J2EK) only became available from 2005"
-    ],
     "pictures" : {
         "mugshot": {
             "label": "RR-J2BE in SW/PN BK",
@@ -161,6 +136,34 @@
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/5WK9lDAZaM8oQsWkUwmya6/66e2313e506179680c361000b65f17d0/JacksonSTARS-2005-JapanOnly-catalog.pdf"
             }
         ],
-        "reverb_listings": []
+        "reverb_listings": [
+            {
+                "label": "2005 RR-J2K in Snow White",
+                "url": "https://reverb.com/item/53777183-jackson-stars-rr-j2k-2005-snow-white"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2004,
+            "until": 2006
+        },
+        "variants": [
+            "RR-J2",
+            "RR-J2E",
+            "RR-J2K",
+            "RR-J2EK",
+            "RR-J2B",
+            "RR-J2EB"
+        ],
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "The Kahler equipped models (RR-J2K and RR-J2EK) only became available from 2005."
+                ]
+            }
+        ]
     }
 }

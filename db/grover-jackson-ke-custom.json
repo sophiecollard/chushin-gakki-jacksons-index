@@ -1,21 +1,6 @@
 {
     "brand": "Grover Jackson",
     "model": "Kelly Custom",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "1992-1994"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": null,
     "specs": {
         "neck": {
             "material": "Quarter Sawn Maple",
@@ -47,13 +32,13 @@
         "electronics": {
             "controls": "1x Volume, 1x Tone, 3-Way Toggle Switch",
             "pickup_configuration": {
-                "neck": "J-50BC",
+                "neck": "Jackson J-50BC",
                 "bridge": "J-90C"
             }
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted, w/ cavity)"
+            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted w/ cavity)"
         },
         "finishes": [
             "MB (Metallic Black)",
@@ -66,7 +51,7 @@
         "source": "1993 Jackson & Charvel Catalog (Japan)",
         "value": "JPY 200,000"
     },
-    "notes": null,
+    "additional_sections": null,
     "pictures": {
         "mugshot": {
             "label": "Kelly Custom in MB",
@@ -81,5 +66,12 @@
             }
         ],
         "reverb_listings": []
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 1992,
+            "until": 1994
+        }
     }
 }

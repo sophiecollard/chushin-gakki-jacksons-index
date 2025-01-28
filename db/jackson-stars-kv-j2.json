@@ -1,26 +1,6 @@
 {
     "brand": "Jackson Stars",
     "model": "KV-J2",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "2004-2006"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
-    "variants": [
-        "KV-J2",
-        "KV-J2E",
-        "KV-J2K",
-        "KV-J2EK"
-    ],
     "specs": {
         "neck": {
             "material": "Maple",
@@ -73,11 +53,11 @@
             "bridge_configuration": [
                 {
                     "variant": "KV-J2/J2E",
-                    "value": "Schaller double locking tremolo (recessed)"
+                    "value": "Schaller Tremolo (recessed)"
                 },
                 {
                     "variant": "KV-J2K/J2EK",
-                    "value": "Kahler with Schaller Locking Nut"
+                    "value": "Kahler w/ Schaller Locking Nut"
                 }
             ]
         },
@@ -127,9 +107,6 @@
             }
         ]
     },
-    "notes": [
-        "The Kahler equipped models (KV-J2K and KV-J2EK) only became available from 2005"
-    ],
     "pictures" : null,
     "links": {
         "catalogues": [
@@ -146,6 +123,27 @@
             {
                 "label": "2004 KV-J2 in Black",
                 "url": "https://reverb.com/item/32760569-jackson-stars-king-v-kv-j2-2004-black"
+            }
+        ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 2004,
+            "until": 2006
+        },
+        "variants": [
+            "KV-J2",
+            "KV-J2E",
+            "KV-J2K",
+            "KV-J2EK"
+        ],
+        "additional_sections": [
+            {
+                "title": "Misc Information",
+                "contents": [
+                    "The Kahler equipped models (KV-J2K and KV-J2EK) only became available from 2005."
+                ]
             }
         ]
     }

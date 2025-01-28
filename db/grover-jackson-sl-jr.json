@@ -1,20 +1,6 @@
 {
     "brand": "Grover Jackson",
     "model": "Soloist Jr",
-    "tags": [
-        {
-            "leftColour": "light",
-            "leftContent": "Years of Production",
-            "rightColour": "primary",
-            "rightContent": "1990-1991"
-        },
-        {
-            "leftColour": "light",
-            "leftContent": "Availability",
-            "rightColour": "danger",
-            "rightContent": "Japan"
-        }
-    ],
     "specs": {
         "neck": {
             "material": "Quarter Sawn Maple",
@@ -46,15 +32,14 @@
         "electronics": {
             "controls": "1x Volume, 1x Mid Boost, 3-Way Toggle Switch",
             "pickup_configuration": {
-                "neck": "J-200",
-                "middle": null,
+                "neck": "Jackson J-200",
                 "bridge": "J-50B",
                 "active_electronics": "JE-1200 Mid Boost"
             }
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted, w/ cavity)"
+            "bridge_configuration": "Jackson-branded Schaller Tremolo (top-mounted w/ cavity)"
         },
         "finishes": [
             "Metallic Black",
@@ -66,7 +51,6 @@
         "source": "1991 Charvel & Grover Jackson Catalog (Japan)",
         "value": "JPY 170,000"
     },
-    "notes": null,
     "pictures": null,
     "links": {
         "catalogues": [
@@ -81,5 +65,12 @@
                 "url": "https://reverb.com/uk/item/29814405-grover-jackson-soloist-jr-1990-metallic-black-short-scale"
             }
         ]
+    },
+    "misc": {
+        "availability": "japan",
+        "years_of_manufacture": {
+            "from": 1990,
+            "until": 1991
+        }
     }
 }
