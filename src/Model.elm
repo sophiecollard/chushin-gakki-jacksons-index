@@ -8,6 +8,7 @@ type alias Entry =
     , model : String
     , specs : Specs
     , price : Maybe Price
+    , prices : Maybe (List Price)
     , pictures : Maybe Pictures
     , links : Maybe Links
     , misc : Maybe Misc
@@ -86,6 +87,7 @@ type NutWidth
 type alias FretboardSpecs =
     { material : String
     , fretCount : Int
+    , fretMaterial : Maybe String
     }
 
 
@@ -152,16 +154,13 @@ type BridgeConfiguration
 type Price
     = SimplePrice { value : String, year : Int, source : String }
     | ComplexPrice { values : List (Variants String), year : Int, source : String }
+      -- FIXME Remove legacy price data types once all entries have been upgraded
+    | NewSimplePrice { value : String, source : Link }
+    | NewComplexPrice { values : List (Variants String), source : Link }
 
 
 type alias Pictures =
-    { mugshot : Maybe Mugshot
-    }
-
-
-type alias Mugshot =
-    { label : String
-    , url : String
+    { mugshot : Maybe Link
     }
 
 
@@ -203,8 +202,8 @@ getTags : Misc -> List Tag
 getTags misc =
     List.concat
         [ misc.limitedSeries |> Maybe.map getLimitedSeriesTag |> MaybeUtils.toList
-        , [ getAvailabilityTag misc.availability
-          , getYearsOfManufactureTag misc.yearsOfManufacture
+        , [ getYearsOfManufactureTag misc.yearsOfManufacture
+          , getAvailabilityTag misc.availability
           ]
         ]
 
@@ -226,10 +225,10 @@ getYearsOfManufactureTag : YearsOfManufacture -> Tag
 getYearsOfManufactureTag yom =
     case yom.until of
         Nothing ->
-            DoubleTag LinkTag "Year of Manufacture" (String.fromInt yom.from)
+            DoubleTag DarkTag "Year of Manufacture" (String.fromInt yom.from)
 
         Just until ->
-            DoubleTag LinkTag "Years of Manufacture" (String.fromInt yom.from ++ "-" ++ String.fromInt until)
+            DoubleTag DarkTag "Years of Manufacture" (String.fromInt yom.from ++ "-" ++ String.fromInt until)
 
 
 getLimitedSeriesTag : String -> Tag

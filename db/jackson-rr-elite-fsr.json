@@ -9,7 +9,8 @@
             "nut_width": "1.6875\"",
             "fretboard": {
                 "material": "Ebony",
-                "fret_count": 22
+                "fret_count": 22,
+                "fret_material": "Stainless Steel"
             },
             "inlays": {
                 "material": "Aluminoid",
@@ -32,7 +33,8 @@
             "controls": "2x Volume, 1x Tone, 3-Way Toggle Switch",
             "pickup_configuration": {
                 "neck": "Seymour Duncan SH-2",
-                "bridge": "TB-4"
+                "bridge": "TB-4",
+                "active_electronics": "2-band Active Preamp"
             }
         },
         "hardware": {

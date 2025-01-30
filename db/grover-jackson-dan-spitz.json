@@ -44,11 +44,15 @@
             "Black"
         ]
     },
-    "price": {
-        "year": 1993,
-        "source": "1993 Jackson & Charvel Catalog (Japan)",
-        "value": "JPY 230,000"
-    },
+    "prices": [
+        {
+            "value": "JPY 230,000",
+            "source": {
+                "label": "1993 Jackson & Charvel Catalog (Japan)",
+                "url": "https://assets.ctfassets.net/4jcppgetbqrc/54C6GyN9W8wYuGOekKMgoe/c181e59f1da5f4158123dc1d77044774/JacksonCharvel-1993GJ-Japan-catalog.pdf"
+            }
+        }
+    ],
     "pictures": {
         "mugshot": {
             "label": "Dan Spitz Professional",

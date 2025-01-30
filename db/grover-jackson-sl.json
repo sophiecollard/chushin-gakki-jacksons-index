@@ -49,11 +49,15 @@
             "Orange"
         ]
     },
-    "price": {
-        "year": 1991,
-        "source": "1991 Charvel & Grover Jackson Catalog (Japan)",
-        "value": "JPY 185,000"
-    },
+    "prices": [
+        {
+            "value": "JPY 185,000",
+            "source": {
+                "label": "1991 Charvel & Grover Jackson Catalog (Japan)",
+                "url": "https://guitar-catalog.com/guitar-and-amp/groverjackson/1991/en_15.html"
+            }
+        }
+    ],
     "pictures": null,
     "links": {
         "catalogues": [

@@ -45,9 +45,11 @@
         ]
     },
     "price": {
-        "year": 2008,
-        "source": "June 2008 Jackson Guitars Price List",
-        "value": "USD 1,769.99"
+        "value": "USD 1,769.99",
+        "source": {
+            "label": "July 2008 Jackson Price List",
+            "url": "https://assets.ctfassets.net/4jcppgetbqrc/2RLzAMhwA8Sy8gm2cYwGmk/59ffb2aea3969bf906253d1213c0eda7/Jackson-Price-List-2008-Color.pdf"
+        }
     },
     "pictures": {
         "mugshot": {
@@ -58,23 +60,23 @@
     "links": {
         "catalogues": [
             {
-                "label": "2005 Jackson Guitars Catalog",
+                "label": "2005 Jackson Catalog",
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/26TlCxR15qWwgU2k6oaAie/ac34b65ff4852be22c1485563b4745be/Jackson-2005-catalog.pdf"
             },
             {
-                "label": "February 2006 Jackson Guitars Price List",
+                "label": "February 2006 Jackson Price List",
                 "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2006.pdf"
             },
             {
-                "label": "February 2007 Jackson Guitars Price List",
+                "label": "February 2007 Jackson Price List",
                 "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2007.pdf"
             },
             {
-                "label": "June 2008 Jackson Guitars Price List",
+                "label": "June 2008 Jackson Price List",
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/1OxTyATehmCM8uoWsY6S0q/8afe6fd10a865464e6113051d8b49ce1/Jackson-Price-List-2008.pdf"
             },
             {
-                "label": "July 2008 Jackson Guitars Price List",
+                "label": "July 2008 Jackson Price List",
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/2RLzAMhwA8Sy8gm2cYwGmk/59ffb2aea3969bf906253d1213c0eda7/Jackson-Price-List-2008-Color.pdf"
             }
         ],

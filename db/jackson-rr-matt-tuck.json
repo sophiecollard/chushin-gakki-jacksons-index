@@ -44,23 +44,53 @@
             "Black w/ Silver Sparkle Bevels"
         ]
     },
-    "pictures": null,
+    "price": {
+        "values": [
+            {
+                "variant": "Snow White w/ Black Bevels",
+                "value": "USD 1,799.99"
+            },
+            {
+                "variant": "Silver Sparkle w/ Black Bevels",
+                "value": "USD 1,949.99"
+            },
+            {
+                "variant": "Black w/ Silver Sparkle Bevels",
+                "value": "USD 1,949.99"
+            }
+        ],
+        "source": {
+            "label": "January 2010 Jackson Price List",
+            "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2010.pdf"
+        }
+    },
+    "pictures": {
+        "mugshot": {
+            "label": "Matt Tuck Signature Rhoads in Silver Sparkle w/ Black Bevels",
+            "url": "https://jackson.ams3.cdn.digitaloceanspaces.com/mugshots/jackson-matt-tuck-sparkle.png"
+        }
+    },
     "links": {
         "catalogues": [
             {
-                "label": "2008/09 Jackson Guitars Catalog",
+                "label": "2008/09 Jackson Catalog",
                 "url": "https://downloads.ctfassets.net/4jcppgetbqrc/5sItNnN8Gc6emeK4oaq2oK/9f3de0f1645c829cfa52bb10b4042479/Jackson-2008-2009-catalog.pdf"
             },
             {
-                "label": "February 2009 Jackson Guitars Price List",
+                "label": "February 2009 Jackson Price List",
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/1UjsBa6bKYQQEuyqmmGGWe/eff4c7dc5327dc305c9d685c9d8047dc/Jackson-Price-List-2009.pdf"
             },
             {
-                "label": "January 2010 Jackson Guitars Price List",
+                "label": "January 2010 Jackson Price List",
                 "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2010.pdf"
             }
         ],
-        "reverb_listings": []
+        "reverb_listings": [
+            {
+                "label": "2008 Matt Tuck Signature Rhoads in Snow White w/ Black Bevels",
+                "url": "https://reverb.com/uk/item/86863516-jackson-matt-tuck-signature-bullet-for-my-valentine"
+            }
+        ]
     },
     "misc": {
         "availability": "worldwide",

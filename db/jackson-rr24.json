@@ -48,7 +48,7 @@
     },
     "price": {
         "year": 2008,
-        "source": "June 2008 Jackson Guitars Price List",
+        "source": "June 2008 Jackson Price List",
         "value": "USD 1,799.99"
     },
     "pictures": {
@@ -60,27 +60,27 @@
     "links": {
         "catalogues": [
             {
-                "label": "February 2007 Jackson Guitars Price List",
+                "label": "February 2007 Jackson Price List",
                 "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2007.pdf"
             },
             {
-                "label": "June 2008 Jackson Guitars Price List",
+                "label": "June 2008 Jackson Price List",
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/1OxTyATehmCM8uoWsY6S0q/8afe6fd10a865464e6113051d8b49ce1/Jackson-Price-List-2008.pdf"
             },
             {
-                "label": "July 2008 Jackson Guitars Price List",
+                "label": "July 2008 Jackson Price List",
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/2RLzAMhwA8Sy8gm2cYwGmk/59ffb2aea3969bf906253d1213c0eda7/Jackson-Price-List-2008-Color.pdf"
             },
             {
-                "label": "February 2009 Jackson Guitars Price List",
+                "label": "February 2009 Jackson Price List",
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/1UjsBa6bKYQQEuyqmmGGWe/eff4c7dc5327dc305c9d685c9d8047dc/Jackson-Price-List-2009.pdf"
             },
             {
-                "label": "January 2010 Jackson Guitars Price List",
+                "label": "January 2010 Jackson Price List",
                 "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2010.pdf"
             },
             {
-                "label": "January 2011 Jackson Guitars Price List",
+                "label": "January 2011 Jackson Price List",
                 "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2011.pdf"
             }
         ],

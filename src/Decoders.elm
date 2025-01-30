@@ -1,16 +1,17 @@
 module Decoders exposing (..)
 
-import Json.Decode exposing (Decoder, andThen, fail, field, int, list, map, map2, map3, map4, map6, map7, maybe, oneOf, string, succeed)
+import Json.Decode exposing (Decoder, andThen, fail, field, int, list, map, map2, map3, map4, map6, map7, map8, maybe, oneOf, string, succeed)
 import Model exposing (..)
 
 
 entryDecoder : Decoder Entry
 entryDecoder =
-    map7 Entry
+    map8 Entry
         (field "brand" brandDecoder)
         (field "model" string)
         (field "specs" specsDecoder)
         (optionalField "price" priceDecoder)
+        (optionalField "prices" (list priceDecoder))
         (optionalField "pictures" picturesDecoder)
         (optionalField "links" linksDecoder)
         (optionalField "misc" miscDecoder)
@@ -98,9 +99,10 @@ neckSpecsDecoder =
 
 fretboardSpecsDecoder : Decoder FretboardSpecs
 fretboardSpecsDecoder =
-    map2 FretboardSpecs
+    map3 FretboardSpecs
         (field "material" string)
         (field "fret_count" int)
+        (optionalField "fret_material" string)
 
 
 inlaysSpecsDecoder : Decoder InlaysSpecs
@@ -270,11 +272,17 @@ bridgeConfigurationDecoder =
 priceDecoder : Decoder Price
 priceDecoder =
     oneOf
-        [ map3 (\v y s -> SimplePrice { value = v, year = y, source = s })
+        [ map2 (\v s -> NewSimplePrice { value = v, source = s })
+            (field "value" string)
+            (field "source" linkDecoder)
+        , map2 (\vs s -> NewComplexPrice { values = vs, source = s })
+            (field "values" (string |> variantsDecoder |> list))
+            (field "source" linkDecoder)
+        , map3 (\v y s -> SimplePrice { value = v, year = y, source = s })
             (field "value" string)
             (field "year" int)
             (field "source" string)
-        , map3 (\v y s -> ComplexPrice { values = v, year = y, source = s })
+        , map3 (\vs y s -> ComplexPrice { values = vs, year = y, source = s })
             (field "values" (string |> variantsDecoder |> list))
             (field "year" int)
             (field "source" string)
@@ -284,14 +292,7 @@ priceDecoder =
 picturesDecoder : Decoder Pictures
 picturesDecoder =
     map Pictures
-        (optionalField "mugshot" mugshotDecoder)
-
-
-mugshotDecoder : Decoder Mugshot
-mugshotDecoder =
-    map2 Mugshot
-        (field "label" string)
-        (field "url" string)
+        (optionalField "mugshot" linkDecoder)
 
 
 linksDecoder : Decoder Links

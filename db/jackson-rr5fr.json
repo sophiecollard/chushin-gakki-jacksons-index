@@ -1,6 +1,6 @@
 {
     "brand": "Jackson",
-    "model": "RR24M",
+    "model": "RR5FR",
     "specs": {
         "neck": {
             "material": "Maple",
@@ -8,15 +8,12 @@
             "scale_length": "25.5\"",
             "nut_width": "1.6875\"",
             "fretboard": {
-                "material": "Maple",
-                "fret_count": 24
+                "material": "Rosewood",
+                "fret_count": 22
             },
             "inlays": {
-                "material": "Black Acrylic",
+                "material": "Pearloid",
                 "type": "Sharkfins"
-            },
-            "binding": {
-                "colour": "Black"
             }
         },
         "headstock": {
@@ -26,33 +23,33 @@
         },
         "body": {
             "material": "Alder",
-            "top": null,
+            "top": "Flame Maple Veneer on transparent finishes",
             "binding": null
         },
         "electronics": {
-            "controls": "1x Volume",
+            "controls": "2x Volume, 1x Tone, 3-way Toggle Switch",
             "pickup_configuration": {
-                "bridge": "EMG 81"
+                "neck": "Seymour Duncan SH-4",
+                "bridge": "TB-4"
             }
         },
         "hardware": {
             "colour": "Black",
-            "bridge_configuration": "Floyd Rose Original (recessed)"
+            "bridge_configuration": "Floyd Rose FRT-O 2000 (recessed)"
         },
         "finishes": [
-            "Snow White w/ Black Bevels",
-            "Black w/ Snow White Bevels"
+            "Black",
+            "Metallic Pink w/ Silver Bevels (2008-2009 only)",
+            "Transparent Red (2008 only)",
+            "Ivory w/ Black Pinstripes",
+            "Black w/ White Bullseye (2008 only)"
         ]
     },
-    "price": {
-        "year": 2008,
-        "source": "June 2008 Jackson Price List",
-        "value": "USD 1,799.99"
-    },
+    "price": null,
     "pictures": {
         "mugshot": {
-            "label": "RR24M in Snow White w/ Black Bevels",
-            "url": "https://jackson.ams3.cdn.digitaloceanspaces.com/mugshots/jackson-rr24m-white.jpg"
+            "label": "RR5FR in Ivory w/ Black Pinstripes",
+            "url": "https://jackson.ams3.cdn.digitaloceanspaces.com/mugshots/jackson-rr5fr.jpg"
         }
     },
     "links": {
@@ -66,26 +63,21 @@
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/2RLzAMhwA8Sy8gm2cYwGmk/59ffb2aea3969bf906253d1213c0eda7/Jackson-Price-List-2008-Color.pdf"
             },
             {
-                "label": "2008/09 Jackson Catalog",
-                "url": "https://downloads.ctfassets.net/4jcppgetbqrc/5sItNnN8Gc6emeK4oaq2oK/9f3de0f1645c829cfa52bb10b4042479/Jackson-2008-2009-catalog.pdf"
-            },
-            {
                 "label": "February 2009 Jackson Price List",
                 "url": "https://assets.ctfassets.net/4jcppgetbqrc/1UjsBa6bKYQQEuyqmmGGWe/eff4c7dc5327dc305c9d685c9d8047dc/Jackson-Price-List-2009.pdf"
+            },
+            {
+                "label": "January 2010 Jackson Price List",
+                "url": "https://guitar-compare.com/wp-content/uploads/2019/12/Jackson-Price-List-2010.pdf"
             }
         ],
-        "reverb_listings": [
-            {
-                "label": "2008 RR24M in Black w/ Snow White Bevels",
-                "url": "https://reverb.com/uk/item/66604063-jackson-pro-series-rr24m-rhoads-2008-black-with-snow-white-bevels-and-maple-fretboard-made-in-japan-neck-through-floyd-rose-emg-81?show_sold=true"
-            }
-        ]
+        "reverb_listings": []
     },
     "misc": {
         "availability": "worldwide_excl_japan",
         "years_of_manufacture": {
             "from": 2008,
-            "until": 2009
+            "until": 2010
         }
     }
 }
